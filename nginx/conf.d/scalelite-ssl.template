@@ -4,7 +4,7 @@ server {
 	listen 80 default_server;
 	listen [::]:80 default_server;
 
-	include conf.d/scalelite.common;
+	return 301 https://$URL_HOST$request_uri;
 }
 
 server {
